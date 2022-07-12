@@ -1,0 +1,90 @@
+{
+  "id": "/subscriptions/665b2c8d-9363-4be6-a42a-9d16f9619f66/resourceGroups/rg-k8s-cluster-0001/providers/Microsoft.Resources/deployments/azuredeploy",
+  "location": null,
+  "name": "azuredeploy",
+  "properties": {
+    "correlationId": "ed808f8b-a15f-4e77-ab8d-a670c695075a",
+    "debugSetting": null,
+    "dependencies": [],
+    "duration": "PT4M23.3502402S",
+    "error": null,
+    "mode": "Incremental",
+    "onErrorDeployment": null,
+    "outputResources": [
+      {
+        "id": "/subscriptions/665b2c8d-9363-4be6-a42a-9d16f9619f66/resourceGroups/rg-k8s-cluster-0001/providers/Microsoft.ContainerService/managedClusters/k8s-cluster-0001",
+        "resourceGroup": "rg-k8s-cluster-0001"
+      }
+    ],
+    "outputs": {
+      "controlPlaneFQDN": {
+        "type": "String",
+        "value": "amtyagi-f73e5a8a.hcp.centralindia.azmk8s.io"
+      }
+    },
+    "parameters": {
+      "agentCount": {
+        "type": "Int",
+        "value": 3
+      },
+      "agentVMSize": {
+        "type": "String",
+        "value": "Standard_D2s_v3"
+      },
+      "aksClusterName": {
+        "type": "String",
+        "value": "k8s-cluster-0001"
+      },
+      "dnsPrefix": {
+        "type": "String",
+        "value": "amtyagi"
+      },
+      "location": {
+        "type": "String",
+        "value": "centralindia"
+      },
+      "osDiskSizeGB": {
+        "type": "Int",
+        "value": 0
+      },
+      "osType": {
+        "type": "String",
+        "value": "Linux"
+      }
+    },
+    "parametersLink": null,
+    "providers": [
+      {
+        "id": null,
+        "namespace": "Microsoft.ContainerService",
+        "providerAuthorizationConsentState": null,
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              "centralindia"
+            ],
+            "properties": null,
+            "resourceType": "managedClusters",
+            "zoneMappings": null
+          }
+        ]
+      }
+    ],
+    "provisioningState": "Succeeded",
+    "templateHash": "12705365244308198684",
+    "templateLink": null,
+    "timestamp": "2022-07-12T15:36:39.566929+00:00",
+    "validatedResources": null
+  },
+  "resourceGroup": "rg-k8s-cluster-0001",
+  "tags": null,
+  "type": "Microsoft.Resources/deployments"
+}
