@@ -2,13 +2,28 @@
 description: Deploys a managed Kubernetes cluster via Azure Kubernetes Service (AKS)
 page_type: sample
 products:
-- azure
-- azure-resource-manager
+  - azure
+  - azure-resource-manager
 urlFragment: aks-vmss-systemassigned-identity
 languages:
-- json
-- bicep
+  - json
+  - bicep
+lastmod: 2022-07-12T15:36:04.926Z
 ---
+
+> !IMPORTANT]
+>
+> AT implementation of the AKS template is based on the following Azure templates & its parameters
+>
+> [Reference - azure.microsoft.com](https://azure.microsoft.com/en-us/resources/templates/aks-vmss-systemassigned-identity/)
+>
+> ```bash
+> 
+> az group create --name rg-k8s-cluster-0001 --location centralindia #use this command when you need to create a new resource group for your deployment
+> az group deployment create --resource-group rg-k8s-cluster-0001 --template-file azuredeploy.json --parameters aksClusterName=k8s-cluster-0001 dnsPrefix=amtyagi
+> 
+> ```
+
 # Azure Kubernetes Service (AKS)
 
 ![Azure Public Test Date](https://azurequickstartsservice.blob.core.windows.net/badges/quickstarts/microsoft.kubernetes/aks-vmss-systemassigned-identity/PublicLastTestDate.svg)
